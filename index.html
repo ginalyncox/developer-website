@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gina Lyn Cox — Indie Game Developer</title>
+  <meta name="description" content="Solo indie game developer building Sasquatch Wars — a multiplayer strategy game powered by AI-driven development. Press kit, brand assets, and game info.">
+  <meta property="og:title" content="Gina Lyn Cox — Indie Game Developer">
+  <meta property="og:description" content="Solo indie game developer building Sasquatch Wars — a multiplayer strategy game powered by AI-driven development.">
+  <meta property="og:image" content="assets/hero.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-label="Gina Lyn Cox logo">
+          <rect x="2" y="2" width="28" height="28" rx="6" stroke="currentColor" stroke-width="2.5"/>
+          <text x="16" y="22" text-anchor="middle" fill="currentColor" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16">G</text>
+        </svg>
+        <span>Gina Lyn Cox</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#game">Game</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#brand">Brand Kit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <button class="mobile-menu-btn" aria-label="Toggle menu" onclick="document.querySelector('.nav').classList.toggle('nav--open')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero.png" alt="Game development workspace" loading="eager">
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">Indie Game Developer</p>
+      <h1>Gina Lyn Cox</h1>
+      <p class="hero-sub">Building multiplayer strategy games with AI-powered development. Currently creating <strong>Sasquatch Wars</strong> — a cross-platform strategy game with 20+ systems, real-time PvP, and Xsolla-powered monetization.</p>
+      <div class="hero-actions">
+        <a href="#game" class="btn btn-primary">View Game</a>
+        <a href="#brand" class="btn btn-outline">Download Brand Kit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>Solo Developer. AI-Native Workflow.</h2>
+          <p>I'm an indie game developer based in the U.S., building Sasquatch Wars as a solo creator using AI-powered development tools. The entire 290-file codebase — spanning 20+ game systems, real-time multiplayer, payment integration, and cross-platform distribution — was built using AI coding agents in approximately 30 hours of active development time.</p>
+          <p>This approach proves that a single developer with the right tools can build what traditionally requires a team of 10+. The game is live and playable today.</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number">290</span>
+            <span class="stat-label">Source Files</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Game Systems</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">30h</span>
+            <span class="stat-label">AI Dev Time</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Platforms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game -->
+  <section class="section section--alt" id="game">
+    <div class="container">
+      <p class="section-label">Featured Project</p>
+      <h2>Sasquatch Wars</h2>
+      <p class="section-intro">A multiplayer strategy game where players train Sasquatch armies, battle mythical creatures, and compete for world domination.</p>
+
+      <div class="game-header-img">
+        <img src="assets/game-header.png" alt="Sasquatch Wars header art" loading="lazy">
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">&#9876;</div>
+          <h3>Real-Time Strategy</h3>
+          <p>Isometric base building, troop training, march system with attack/scout/gather mechanics. Whiteout Survival-style gameplay.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#127760;</div>
+          <h3>World Map</h3>
+          <p>Tiled overworld with fog-of-war, region control, discoverable content, and PvP territory battles.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#129309;</div>
+          <h3>Alliances</h3>
+          <p>Full alliance system with HQ, chat, cooperative battles, gem gifting, and battle bonds between players.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#127918;</div>
+          <h3>8 Mini-Games</h3>
+          <p>Sasquatch Smash, Log Roll, Solitaire, Logic Puzzles, and more — each with reward systems tied to the main economy.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128176;</div>
+          <h3>Full Monetization</h3>
+          <p>Xsolla-powered: gem packs, Battle Pass, loot crates, skins, bundles, VIP system. 26 SKUs live in the store.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128241;</div>
+          <h3>Cross-Platform</h3>
+          <p>Web (live), Steam (Electron), iOS and Android (Capacitor). One codebase, four distribution channels.</p>
+        </div>
+      </div>
+
+      <div class="game-meta">
+        <div class="meta-item">
+          <span class="meta-label">Genre</span>
+          <span>Multiplayer Strategy / Base Builder</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Engine</span>
+          <span>Custom (React + Express + SQLite)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Platforms</span>
+          <span>Web, Steam, iOS, Android</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Payments</span>
+          <span>Xsolla Pay Station</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Status</span>
+          <span>Live &amp; Playable (Early Access)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Play Now</span>
+          <a href="https://sasquatch-wars.onrender.com" target="_blank" rel="noopener">sasquatch-wars.onrender.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="section" id="screenshots">
+    <div class="container">
+      <p class="section-label">Screenshots</p>
+      <h2>In-Game Gallery</h2>
+      <div class="screenshot-grid">
+        <div class="screenshot-item screenshot-item--large">
+          <img src="assets/xsolla-screenshot-base.png" alt="Isometric base view with buildings" loading="lazy">
+          <span class="screenshot-caption">Base View</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/xsolla-screenshot-worldmap.png" alt="World map with fog of war" loading="lazy">
+          <span class="screenshot-caption">World Map</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/xsolla-screenshot-shop.png" alt="In-game shop with gem packs" loading="lazy">
+          <span class="screenshot-caption">Shop</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/xsolla-screenshot-minigames.png" alt="Mini-games hub" loading="lazy">
+          <span class="screenshot-caption">Mini-Games</span>
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/xsolla-screenshot-alliance.png" alt="Alliance headquarters panel" loading="lazy">
+          <span class="screenshot-caption">Alliance HQ</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="section section--alt" id="tech">
+    <div class="container">
+      <p class="section-label">Technology</p>
+      <h2>Tech Stack</h2>
+      <div class="tech-grid">
+        <div class="tech-item">
+          <span class="tech-name">React + TypeScript</span>
+          <span class="tech-role">Frontend</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Express.js</span>
+          <span class="tech-role">Backend API</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">SQLite</span>
+          <span class="tech-role">Database</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Vite</span>
+          <span class="tech-role">Build Tool</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Tailwind CSS</span>
+          <span class="tech-role">Styling</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Xsolla</span>
+          <span class="tech-role">Payments</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Capacitor</span>
+          <span class="tech-role">Mobile</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Electron</span>
+          <span class="tech-role">Desktop</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Render</span>
+          <span class="tech-role">Hosting</span>
+        </div>
+        <div class="tech-item">
+          <span class="tech-name">Perplexity Computer</span>
+          <span class="tech-role">AI Development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Kit -->
+  <section class="section" id="brand">
+    <div class="container">
+      <p class="section-label">Press Kit</p>
+      <h2>Brand Assets</h2>
+      <p class="section-intro">Download logos, screenshots, and key art for press coverage, partnership inquiries, or investor materials.</p>
+
+      <div class="brand-grid">
+        <div class="brand-card">
+          <h3>Game Header</h3>
+          <p>676 x 320 — Xsolla/store header image</p>
+          <a href="assets/game-header.png" download class="btn btn-sm">Download PNG</a>
+        </div>
+        <div class="brand-card">
+          <h3>Screenshots (5)</h3>
+          <p>1270 x 740 — In-game captures</p>
+          <a href="assets/xsolla-screenshot-base.png" download class="btn btn-sm">Base View</a>
+          <a href="assets/xsolla-screenshot-worldmap.png" download class="btn btn-sm">World Map</a>
+          <a href="assets/xsolla-screenshot-shop.png" download class="btn btn-sm">Shop</a>
+          <a href="assets/xsolla-screenshot-minigames.png" download class="btn btn-sm">Mini-Games</a>
+          <a href="assets/xsolla-screenshot-alliance.png" download class="btn btn-sm">Alliance</a>
+        </div>
+        <div class="brand-card">
+          <h3>Developer Hero</h3>
+          <p>1920 x 1080 — Developer workspace banner</p>
+          <a href="assets/hero.png" download class="btn btn-sm">Download PNG</a>
+        </div>
+        <div class="brand-card brand-card--highlight">
+          <h3>Investor Pitch Deck</h3>
+          <p>12-slide PPTX — game overview, market, monetization, financials, roadmap</p>
+          <a href="assets/sasquatch-wars-pitch-deck.pptx" download class="btn btn-sm">Download PPTX</a>
+        </div>
+      </div>
+
+      <div class="fact-sheet">
+        <h3>Fact Sheet</h3>
+        <table>
+          <tr><td>Developer</td><td>Gina Lyn Cox (Sole Proprietor)</td></tr>
+          <tr><td>Location</td><td>United States</td></tr>
+          <tr><td>Game</td><td>Sasquatch Wars</td></tr>
+          <tr><td>Genre</td><td>Multiplayer Strategy / Base Builder</td></tr>
+          <tr><td>Platforms</td><td>Web, Steam, iOS, Android</td></tr>
+          <tr><td>Status</td><td>Live — Early Access</td></tr>
+          <tr><td>Engine</td><td>Custom (React + Express + SQLite)</td></tr>
+          <tr><td>Monetization</td><td>IAP, Battle Pass, Loot Crates, Skins, VIP</td></tr>
+          <tr><td>Payment Provider</td><td>Xsolla</td></tr>
+          <tr><td>Development Approach</td><td>Solo dev + AI-powered (Perplexity Computer)</td></tr>
+          <tr><td>Codebase</td><td>290 files, 20+ systems, TypeScript full-stack</td></tr>
+          <tr><td>Live URL</td><td><a href="https://sasquatch-wars.onrender.com" target="_blank">sasquatch-wars.onrender.com</a></td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact-section">
+      <p class="section-label">Get In Touch</p>
+      <h2>Contact</h2>
+      <p>Interested in partnering, investing, or covering Sasquatch Wars? Reach out directly.</p>
+      <div class="contact-links">
+        <a href="mailto:gina.lyn.cox@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://sasquatch-wars.onrender.com" target="_blank" class="btn btn-outline">Play the Game</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Gina Lyn Cox. All rights reserved.</p>
+      <p class="footer-sub">Sasquatch Wars is a trademark of Gina Lyn Cox.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Theme toggle
+    (function () {
+      const t = document.querySelector('[data-theme-toggle]'),
+        r = document.documentElement;
+      let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+      r.setAttribute('data-theme', d);
+      t && t.addEventListener('click', () => {
+        d = d === 'dark' ? 'light' : 'dark';
+        r.setAttribute('data-theme', d);
+        t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+        t.innerHTML = d === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      });
+    })();
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          document.querySelector('.nav').classList.remove('nav--open');
+        }
+      });
+    });
+
+    // Header scroll effect
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      const scroll = window.scrollY;
+      header.classList.toggle('header--scrolled', scroll > 50);
+      header.classList.toggle('header--hidden', scroll > 300 && scroll > lastScroll);
+      lastScroll = scroll;
+    });
+  </script>
+</body>
+</html>
