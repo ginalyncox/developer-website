@@ -283,6 +283,14 @@
             <span><strong>Goal</strong> · $17K Kickstarter</span>
             <span><strong>Status</strong> · Pre-launch</span>
           </div>
+          <div class="callout-actions">
+            <!-- TODO: Replace data-kickstarter-url with the real Kickstarter pre-launch URL once created. -->
+            <a href="mailto:gina.lyn.cox@gmail.com?subject=Notify%20me%20%E2%80%94%20Operation%20Wildwood%20Kickstarter&body=Please%20email%20me%20when%20the%20Operation%20Wildwood%20Kickstarter%20goes%20live."
+               class="btn btn-primary btn-sm"
+               id="wildwood-cta"
+               data-kickstarter-url="">Follow on Kickstarter</a>
+            <span class="callout-actions-note" id="wildwood-cta-note">Pre-launch page opening soon — email me to get notified.</span>
+          </div>
         </div>
       </div>
     </div>
@@ -473,6 +481,20 @@
         }
       });
     });
+
+    // Wildwood Kickstarter CTA: swap to the real URL when provided
+    (function () {
+      const cta = document.getElementById('wildwood-cta');
+      const note = document.getElementById('wildwood-cta-note');
+      if (!cta) return;
+      const url = cta.getAttribute('data-kickstarter-url');
+      if (url && url.trim()) {
+        cta.setAttribute('href', url.trim());
+        cta.setAttribute('target', '_blank');
+        cta.setAttribute('rel', 'noopener');
+        if (note) note.textContent = 'Pre-launch page live — follow to get launch-day notified.';
+      }
+    })();
 
     // Header scroll effect
     let lastScroll = 0;
