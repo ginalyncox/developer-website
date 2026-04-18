@@ -342,7 +342,52 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .feature-icon {
   font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG line icons — capability cards */
+.feature-icon--svg {
+  width: 44px;
+  height: 44px;
+  border-radius: 0.625rem;
+  background: color-mix(in srgb, var(--color-primary) 10%, transparent);
+  color: var(--color-primary);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.feature-icon--svg svg {
+  width: 24px;
+  height: 24px;
+}
+.feature-card:hover .feature-icon--svg {
+  background: color-mix(in srgb, var(--color-primary) 18%, transparent);
+  transform: translateY(-1px);
+}
+
+/* Game art icons — featured project cards */
+.feature-icon--art {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0.5rem;
+  margin-left: -0.5rem;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.18));
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.feature-icon--art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.feature-card:hover .feature-icon--art {
+  transform: translateY(-3px) rotate(-1.5deg);
+}
+
+/* On alt surfaces (cream/dark), nudge shadow for better contrast */
+[data-theme="dark"] .feature-icon--art {
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.45));
 }
 .feature-card h3 {
   font-family: var(--font-display);
