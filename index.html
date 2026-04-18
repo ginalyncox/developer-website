@@ -263,7 +263,7 @@
         </div>
         <div class="meta-item">
           <span class="meta-label">Play Now</span>
-          <a href="https://squatchwars.com" target="_blank" rel="noopener">squatchwars.com</a>
+          <a href="https://sasquatchwars.com" target="_blank" rel="noopener">sasquatchwars.com</a>
         </div>
       </div>
     </div>
@@ -284,12 +284,13 @@
             <span><strong>Status</strong> · Pre-launch</span>
           </div>
           <div class="callout-actions">
-            <!-- TODO: Replace data-kickstarter-url with the real Kickstarter pre-launch URL once created. -->
-            <a href="mailto:gina.lyn.cox@gmail.com?subject=Notify%20me%20%E2%80%94%20Operation%20Wildwood%20Kickstarter&body=Please%20email%20me%20when%20the%20Operation%20Wildwood%20Kickstarter%20goes%20live."
-               class="btn btn-primary btn-sm"
+            <a href="/wildwood/" class="btn btn-primary btn-sm">Explore the Campaign</a>
+            <!-- TODO: Replace data-kickstarter-url with the Kickstarter pre-launch URL once created; the script below will auto-swap this button. -->
+            <a href="/wildwood/#rewards"
+               class="btn btn-outline btn-sm"
                id="wildwood-cta"
-               data-kickstarter-url="">Follow on Kickstarter</a>
-            <span class="callout-actions-note" id="wildwood-cta-note">Pre-launch page opening soon — email me to get notified.</span>
+               data-kickstarter-url="">View Pledge Tiers</a>
+            <span class="callout-actions-note" id="wildwood-cta-note">Card deck, art prints, enamel pins, and stretch goals — $35–$250.</span>
           </div>
         </div>
       </div>
@@ -426,7 +427,7 @@
           <tr><td>Payment Provider</td><td>Xsolla</td></tr>
           <tr><td>Development Approach</td><td>AI-native product engineering — solo, agent-orchestrated</td></tr>
           <tr><td>Codebase</td><td>290 files, 20+ systems, TypeScript full-stack</td></tr>
-          <tr><td>Live URL</td><td><a href="https://squatchwars.com" target="_blank">squatchwars.com</a></td></tr>
+          <tr><td>Live URL</td><td><a href="https://sasquatchwars.com" target="_blank">sasquatchwars.com</a></td></tr>
         </table>
       </div>
     </div>
@@ -440,7 +441,7 @@
       <p>Interested in partnering, investing, or covering Sasquatch Wars — or in hiring an AI-native product engineer for a serious shipping project? Reach out directly.</p>
       <div class="contact-links">
         <a href="mailto:gina.lyn.cox@gmail.com" class="btn btn-primary">Email Me</a>
-        <a href="https://squatchwars.com" target="_blank" class="btn btn-outline">Play the Game</a>
+        <a href="https://sasquatchwars.com" target="_blank" class="btn btn-outline">Play the Game</a>
       </div>
     </div>
   </section>
@@ -482,7 +483,8 @@
       });
     });
 
-    // Wildwood Kickstarter CTA: swap to the real URL when provided
+    // Wildwood Kickstarter CTA: swap View Pledge Tiers to the real Kickstarter
+    // pre-launch URL when provided via data-kickstarter-url on #wildwood-cta.
     (function () {
       const cta = document.getElementById('wildwood-cta');
       const note = document.getElementById('wildwood-cta-note');
@@ -492,7 +494,10 @@
         cta.setAttribute('href', url.trim());
         cta.setAttribute('target', '_blank');
         cta.setAttribute('rel', 'noopener');
-        if (note) note.textContent = 'Pre-launch page live — follow to get launch-day notified.';
+        cta.textContent = 'Follow on Kickstarter';
+        cta.classList.remove('btn-outline');
+        cta.classList.add('btn-primary');
+        if (note) note.textContent = 'Kickstarter pre-launch live — follow now for launch-day notification.';
       }
     })();
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Gina Cox — Primary artist signature (Variant B, Hand Script)
+  Sasquatch Wars Tarot · 1953
+  Use color `currentColor` for adaptive (dark-on-light / light-on-dark).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 500" role="img" aria-label="Gina Cox, Artist, 1953">
+  <style>
+    .sig-name { font-family: 'DejaVu Sans', 'Segoe UI', 'Helvetica Neue', sans-serif; font-weight: 800; font-style: italic; font-size: 160px; }
+    .sig-credit { font-family: 'Space Mono', 'DejaVu Sans Mono', ui-monospace, monospace; font-size: 34px; letter-spacing: 0.15em; }
+    .sig-rule { stroke-linecap: round; fill: none; stroke-width: 5; }
+  </style>
+  <g fill="currentColor" stroke="currentColor">
+    <text class="sig-name" x="700" y="240" text-anchor="middle">Gina Cox</text>
+    <path class="sig-rule" d="M 420 310 L 980 310 L 1020 340" />
+    <text class="sig-credit" x="700" y="400" text-anchor="middle" letter-spacing="6">ARTIST  ·  1953</text>
+  </g>
+</svg>

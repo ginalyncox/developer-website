@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Gina Cox — Minimal signature (name + flourish only).
+  For corners of cards, prints, patches. Uses currentColor.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 360" role="img" aria-label="Gina Cox">
+  <style>
+    .sig-name { font-family: 'DejaVu Sans', 'Segoe UI', 'Helvetica Neue', sans-serif; font-weight: 800; font-style: italic; font-size: 180px; }
+    .sig-rule { stroke-linecap: round; fill: none; stroke-width: 6; }
+  </style>
+  <g fill="currentColor" stroke="currentColor">
+    <text class="sig-name" x="700" y="230" text-anchor="middle">Gina Cox</text>
+    <path class="sig-rule" d="M 400 300 L 1000 300 L 1050 335" />
+  </g>
+</svg>
